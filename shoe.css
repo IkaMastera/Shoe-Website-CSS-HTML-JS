@@ -1,20 +1,45 @@
+:root {
+    --header-height: 3.5rem;
+
+    /* Colors */
+    --title-color: #042c54;
+    --text-color: #fff;
+    --hover-color: #1BFFFF;
+
+    /* Fonts */
+    --body-font: "Montserrat", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813;
+
+    /* Font Weight */
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+}
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--body-font);
+}
+
+body{
+    background: linear-gradient(135deg, #2E3192, #1BFFFF);
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+/*===== Home Section =====*/
+
 section{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bg1.png);
-    background-size: cover;
-    background-position: center;
 }
 
 section nav{
@@ -22,7 +47,7 @@ section nav{
     align-items: center;
     justify-content: space-around;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: white;
+    background: linear-gradient(135deg, #2E3192, #1BFFFF);
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +57,7 @@ section nav{
 
 section nav .logo{
     font-size: 35px;
-    color: #c72092;
+    color: var(--title-color);
     margin: 5px 0;
     cursor: pointer;
     position: relative;
@@ -40,7 +65,7 @@ section nav .logo{
 }
 
 section nav .logo span{
-    color: #6c14d0;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -55,24 +80,26 @@ section nav ul li{
 
 section nav ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--body-color);
     transition: 0.2s;
 }
 
 section nav ul li a:hover{
-    color: #c72092;
+    color: var(--hover-color);
 }
 
 section nav .icons i{
     margin: 0 4px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: var(--normal-font-size);
     transition: 0.3s;
 }
 
 section nav .icons i:hover{
-    color: #c72092;
+    color: var(--title-color);;
 }
+
+/*===== Main Section =====*/
 
 section .main .main_content{
     display: flex;
@@ -84,7 +111,7 @@ section .main .main_content .main_text h1{
     font-size: 90px;
     line-height: 70px;
     font-family: pyxidium quick;
-    background: linear-gradient(to right, #c72092, #6c13d0);
+    background: var(--title-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: relative;
@@ -94,7 +121,7 @@ section .main .main_content .main_text h1{
 
 section .main .main_content .main_text h1 span{
     font-size: 70px;
-    background: linear-gradient(to right, #c72092, #6c13d0);
+    background: var(--title-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -102,6 +129,8 @@ section .main .main_content .main_text h1 span{
 section .main .main_content .main_text p{
     width: 600px;
     text-align: justify;
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
     line-height: 21px;
     position: relative;
     top: 85px;
@@ -120,7 +149,7 @@ section .main .social_icon{
     top: 50%;
     left: 98%;
     transform: translate(-50%, -50%);
-    font-size: 22px;
+    font-size: var(--h1-font-size);
 }
 
 section .main .social_icon i{
@@ -130,7 +159,7 @@ section .main .social_icon i{
 }
 
 section .main .social_icon i:hover{
-    color: #c72092;
+    color: var(--hover-color);
 }
 
 section .main .button{
@@ -138,7 +167,7 @@ section .main .button{
     left: 6%;
     padding: 10px 20px;
     border-radius: 30px;
-    background: linear-gradient(to right, #c72092, #6c14d0);
+    background: var(--title-color);
 }
 
 section .main .button a{
@@ -153,7 +182,7 @@ section .main .social_icon i{
 }
 
 section .main .social_icon i:hover{
-    color: #c72092;
+    color: var(--hover-color);
 }
 
 section .main .button{
@@ -161,7 +190,7 @@ section .main .button{
     left: 6%;
     padding: 10px 20px;
     border-radius: 30px;
-    background: linear-gradient(to right, #c72092, #6c14d0);
+    background: var(--title-color);
 }
 
 section .main .button a{
@@ -178,3 +207,15 @@ section .main .button i{
 section .main .button:hover i{
     transform: translateX(6px);
 }
+
+/*===== Products =====*/
+
+/*===== About =====*/
+
+/*===== Customer Review =====*/
+
+/*===== Services =====*/
+
+/*===== Login =====*/
+
+/*===== Footer =====*/
